@@ -1,0 +1,783 @@
+/* COMENTÁRIOS AQUI */
+.c3{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgoldenrod;
+}
+
+/* DISPLAY BLOCK/INLINE */
+.bloco{
+    display: inline;
+}
+
+#p4{
+    display: inline;
+}
+
+.c4{
+    display: block;
+}
+
+/* WIDTH E HEIGHT */
+.b2{
+    width: 300px;
+}
+
+.b2 > .b22{
+    width: 500px;
+}
+
+.c5{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+}
+
+html{
+    background-color: cadetblue;
+}
+
+/* PREENCHIMENTO DE FUNDO (CORES) */
+.box1{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.box2{
+    display: inline-block;
+    width: 150px;
+    height: 180px;
+    background-color: saddlebrown;
+}
+
+.box2a{
+    width: 50px;
+    height: 50px;
+    background-color: darkgoldenrod;
+}
+
+.box2aa{
+    width: 30px;
+    height: 30px;
+    background-color: violet;
+}
+
+.click{
+    background-color: transparent;
+}
+
+/* PREENCHIMENTO DE FUNDO (IMAGENS) */
+.box3{
+    width: 100%;
+    height: 600px;
+    background-color: blueviolet;
+}
+
+.box3a{
+    width: 100%;
+    height: 450px;
+    background-color: salmon;
+    background-image: url(../imagens/pexels-passarinho.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center center; */
+    background-position: 10% 30%;  
+}
+
+.box4{
+    width: 100%;
+    height: 600px;
+    background-color: #0e224a;
+}
+
+.box4a{
+    width: 100%;
+    height: 450px;
+    background-color: #852f26;
+    background-image: url(https://img.freepik.com/vetores-premium/textura-padrao-de-superficie-preto-e-branco-bw-design-grafico-ornamental-ornamentos-de-mosaico-modelo-de-padrao_409989-1067.jpg);
+    
+}
+
+.box5{
+    width: 100%;
+    height: 600px;
+    background-color: #0e4a32;
+}
+
+.box5a{
+    width: 100%;
+    height: 450px;
+    background-color: #871b46;
+    background-image: url(../imagens/css-3.png), url(https://wallpapers.com/images/hd/4k-landscape-montana-state-america-t870yy4rc9jgyvk5.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px, cover;
+    background-position: 50% 20%, 50% 50%;
+}
+
+/* BORDAS E LINHA DE DESTAQUE */
+.box6{
+    width: 300px;
+    height: 300px;
+    background-color: slategrey;
+    /* TIPOS DE BORDA:
+        SOLID = BORDA LISA
+        DASHED = BORDA TRACEJADA
+        DOTTED = BORDA PONTILHADA
+        DOUBLE = BORDA DUPLA
+        GROOVE = BORDA 3D
+        HIDDEN = SEM BORDA
+        INSET = BORDA JOGANDO ELEMENTO PRA BAIXO
+        OUTSET = BORDA JOGANDO ELEMENTO PRA CIMA
+        RIDGE = BORDA 3D
+    */
+    border: 10px ridge red;
+    border-top: 10px solid blue;
+    border-bottom: 10px dashed green;
+    border-left: 10px dotted yellow;
+}
+
+.box6a{
+    width: 300px;
+    height: 300px;
+    background-color: rosybrown;
+    outline: 20px solid sandybrown;
+    /* 'OUTLINE' NÃO INFLUENCIA O QUE ESTÁ A VOLTA DELE */
+}
+
+/* CANTOS ARRENDONDADOS */
+.box7{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(116, 48, 48);
+    border-radius: 80% 20% 50% 10%;
+    border: 10px solid #c942a5;
+}
+
+/* OPACIDADE E VISIBILIDADE */
+.box8{
+    width: 300px;
+    height: 300px;
+    background-color: #999;
+    visibility: hidden;
+    /* 'VISIBILITY' = ESCONDE O ELEMENTO MAS O ESPAÇO DELE AINDA FICA VISÍVEL 
+    */
+}
+
+.box8a{
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+     opacity: 0.7;
+    /* 'OPACITY' = DEIXA O ELEMENTO INTEIRO TRANSPARENTE
+    */
+}
+
+/* BOX MODEL - ESPAÇAMENTO EXTERNO */
+.box9{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(182, 25, 188);
+    margin: 20px 10px 50px 100px;
+}
+
+.box9a{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(182, 25, 188);
+    margin-top: 20px;
+}
+
+/* BOX MODEL - ESPAÇAMENTO INTERNO */
+.box10{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(188, 25, 82);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.box10a{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(188, 25, 82);
+    margin-top: 20px;
+    padding: 30px 60px 10px 40px;
+}
+
+/* BOX SIZING */
+.box11{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(150, 21, 32);
+    padding: 20px;
+    box-sizing: border-box;
+    /* 'BORDER-BOX' = A LARGURA E ALTURA VÃO RESPEITAR O TAMANHO INTEIRO DA CAIXA */
+}
+
+.box11a{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(151, 81, 87);
+    padding: 20px;
+    box-sizing: content-box;
+    /* 'CONTENT-BOX' = A LARGURA E ALTURA VÃO RESPEITAR SOMENTE A PARTEZINHA INTERNA DO CONTEÚDO */
+}
+
+/* CONTENÇÃO DE CONTEÚDO */
+.box12{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(178, 158, 28);
+    padding: 20px;
+    /* 'OVERFLOW: AUTO;' = NÃO DEIXA VAZAR PARA FORA, CRIA BARRA DE ROLAGEM 
+    'OVERFLOW: HIDDEN;' = ESCONDE O QUE VAZAR PARA FORA
+    'OVERFLOW: SCROLL;' = IGUAL DO AUTO PORÉM CRIA BARRA DE ROLAGEM VERTICAL E HORIZONTAL
+    */
+    overflow: auto;
+}
+
+.box12a{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(182, 172, 102);
+    padding: 20px;
+    /* 'OVERFLOW: AUTO;' = NÃO DEIXA VAZAR PARA FORA, CRIA BARRA DE ROLAGEM 
+    'OVERFLOW: HIDDEN;' = ESCONDE O QUE VAZAR PARA FORA
+    'OVERFLOW: SCROLL;' = IGUAL DO AUTO PORÉM CRIA BARRA DE ROLAGEM VERTICAL E HORIZONTAL
+    */
+    overflow: hidden;
+}
+
+.box12aa{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(239, 220, 82);
+    padding: 20px;
+    /* 'OVERFLOW: AUTO;' = NÃO DEIXA VAZAR PARA FORA, CRIA BARRA DE ROLAGEM 
+    'OVERFLOW: HIDDEN;' = ESCONDE O QUE VAZAR PARA FORA
+    'OVERFLOW: SCROLL;' = IGUAL DO AUTO PORÉM CRIA BARRA DE ROLAGEM VERTICAL E HORIZONTAL
+    */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    /* 'WHITE-SPACE: NOWRAP;' = NÃO EMBRULHAR O CONTEÚDO */
+}
+
+/* TIPOS DE FONTE */
+.box13{
+    padding: 10px;
+    background-color: rgb(41, 48, 72);
+    color: white;
+}
+
+.box13 > .t1{
+    font-family: 'Times New Roman', Times, serif; /* FONTE PADRÃO*/
+}
+
+.box13 > .t2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box13 > .t3{
+    font-family: 'Bungee Spice', sans-serif ;
+}
+
+/* TAMANHO DO TEXTO */
+.box14{
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.box14a{
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ESPESSURA (PESO) */
+.box15{
+    background-color: #999;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.p1{
+    font-weight: 100;
+}
+.p2{
+    font-weight: 200;
+}
+.p3{
+    font-weight: 300;
+}
+.p4{
+    font-weight: 400;
+}
+.p5{
+    font-weight: 500;
+}
+.p6{
+    font-weight: 600;
+}
+.p7{
+    font-weight: 700;
+}
+.p8{
+    font-weight: 800;
+}
+.p9{
+    font-weight: 900;
+}
+
+/* ALINHAMENTO DEE TEXTO */
+.box16{
+    background-color: #2a2525;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.box16a{
+    background-color: #2a2525;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box16aa{
+    background-color: #2a2525;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box16ab{
+    background-color: #2a2525;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* DECORAÇÃO DE TEXTO */
+.box17{
+    background-color: #331d4d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-decoration: underline dashed;
+}
+
+.box17a{
+    background-color: #331d4d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-decoration: overline double yellow;
+}
+
+.box17aa{
+    background-color: #331d4d;
+    color: white;
+    padding: 20px;
+    text-decoration: underline overline wavy red;
+}
+
+/* CAPITALIZAÇÃO */
+.box18{
+    background-color: #1d4d27;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.box18a{
+    background-color: #1d4d27;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    /* 'TEXT-TRANSFORM: CAPITALIZE;' = SOMENTE A PRIMEIRA LETRA DE CADA PALAVRA FICA MAIÚSCULA */
+}
+
+.box18aa{
+    background-color: #1d4d27;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.box18ab{
+    background-color: #1d4d27;
+    color: white;
+    padding: 20px;
+    text-transform: lowercase;
+}
+
+/* ESPAÇAMENTO */
+.box19{
+    background-color: #4d281d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5; /* ESPAÇAMENTO DE LINHA */
+}
+
+.box19a{
+    background-color: #4d281d;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    line-height: 30px; /* ESPAÇAMENTO DE LINHA */
+}
+
+.box19aa{
+    background-color: #4d281d;
+    color: white;
+    padding: 20px;
+    letter-spacing: 4px; /* ESPAÇO ENTRE CADA LETRA */
+}
+
+/* DESLOCAMENTO */
+.box20{
+    padding: 20px;
+    margin-bottom: 15px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.box20a{
+    width: 33.3%;
+    float: left;
+    background-color: #e74c3ced;
+}
+
+.box20aa{
+    width: 33.3%;
+    float: left;
+    background-color: #2980b9;
+}
+
+.box20ab{
+    width: 33.3%;
+    float: left;
+    background-color: #27ae60;
+}
+
+.box20ac{
+    background-color: #f39c12;
+}
+
+/* POSICIONAMENTO */
+.box21{
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3ced;
+}
+
+.box21a{
+    width: 50px;
+    height: 50px;
+    background-color: #2980b9;
+}
+
+.box21aa{
+    width: 300px;
+    height: 300px;
+    background-color: #27ae60;
+}
+
+.box21a1{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #565656;
+}
+
+.box21a2{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #7e7e7e;
+}
+
+.box21a3{
+    padding: 10px;
+    background-color: #999;
+    position: relative; /* FAZ COM QUE OQ TIVER DENTRO DELE VAI RESPEITA-LO */
+}
+
+.box21a4{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #d7d6d6;
+    position: absolute;
+    top: 10px;
+    left: 180px;
+}
+
+.box21ab{
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.box21ac{
+    width: 100px;
+    height: 100px;
+    background-color: #d512f3;
+    position: fixed; /* MANTÉM O CONTEÚDO FIXADO NA TELA */
+    top: 15px;
+    right: 15px;
+}
+
+/* PROFUNDIDADE */
+.box22{
+    box-sizing: border-box;
+}
+
+.box22a{
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3ced;
+    position: absolute;
+    top: 900px;
+    left: 60px;
+}
+
+.box22aa{
+    width: 100px;
+    height: 100px;
+    background-color: #2980b9;
+    position: absolute;
+    top: 970px;
+    left: 150px;
+    z-index: 2; /* PROFUNDIDADE DO CONTEÚDO */
+}
+
+.box22ab{
+    width: 100px;
+    height: 100px;
+    background-color: #27ae60;
+    position: absolute;
+    top: 900px;
+    left: 220px;
+}
+
+/* ESTILIZANDO LISTAS */
+.box23{
+    padding: 30px;
+    color: white;
+}
+
+.lista{
+    background-color: crimson;
+    list-style-type: upper-roman;
+    /* 'list-style-position: outside;' PADRÃO */
+    list-style-position: inside;
+}
+
+.item{
+    background-color: darkcyan;
+}
+
+.lista2{
+    background-color: #562f1c;
+    list-style-type: upper-roman;
+    list-style-image: url(../imagens/star-24px.png);
+}
+
+/* ESTILIZANDO INPUTS */
+.box24{
+    color: white;
+    padding: 30px;
+}
+
+label{
+    display: block;
+}
+
+.box24a{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    color: blue;
+}
+
+input::placeholder{
+    color: red;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: vertical; /* REDIMENSIONA O CONTEÚDO */
+    color: blue;
+}
+
+select{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    color: blue;
+}
+
+.box24aa{
+    text-align: center;
+}
+
+.box24aa > button{
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    font-size: 18px;
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+
+.box24aa > button:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+/* REDIMENSIONAMENTO */
+.box25{
+    padding: 30px;
+}
+
+.box25 > textarea{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.box25a{
+    width: 100%;
+    min-height: 100px;
+    background-color: #666;
+    resize: both;
+    overflow: auto;
+}
+
+/* ESTILIZANDO TABELAS */
+.box26{
+    color: white;
+    padding: 30px;
+}
+
+.box26a{
+    color: white;
+    padding: 30px;
+}
+
+.box26a-tb{
+    width: 100%;
+    /* 'border-spacing: 10px;' = ESPAÇAMENTO ENTRE AS BORDAS */
+    border-collapse: collapse;
+    cursor: default;
+}
+
+.box26a-tb caption{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.box26a-tb th{
+    background-color: #975157;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.box26a-tb .first-th{
+    border-top-left-radius: 5px;
+}
+
+.box26a-tb .last-th{
+    border-top-right-radius: 5px;
+}
+
+.box26a-tb td{
+    padding: 10px;
+}
+
+.box26a-tb tbody tr:hover td{
+    background-color: white;
+    color: #975157;
+}
+
+.box26a-tb tr{
+    background-color: #565656;
+}
+
+.box26a-tb .even{
+    background-color: #666;
+}
+
+.box26a-tb tfoot td{
+    border-top: solid 3px #975157;
+    border-bottom: solid 5px #975157;
+}
+
+.box26a-tb .total{
+    text-align: end;
+}
+
+/* ESTILIZANDO BARRAS DE ROLAGEM */
+.box27 div::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+background-color: #b887ab;
+}
+
+.box27 div::-webkit-scrollbar-thumb{
+    background-color: #ac4cac;
+    border-radius: 10px;
+}
+
+.box27 div::-webkit-scrollbar-thumb:hover{
+    background-color: #49294a;
+}
+
+.box27{
+    color: white;
+    padding: 30px;
+}
+
+.box27a{
+    background-color: plum;
+    height: 150px;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.box27aa{
+    background-color: plum;
+    height: 150px;
+    overflow: auto;
+}

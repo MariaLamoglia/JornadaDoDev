@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- PARA QUE O CSS FUNCIONE EM TODOS OS NAVEGADORES -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS</title>
+    <style type="text/css">
+        .c1{
+            color: red;
+        }
+
+        .c2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" class="c1">Parágrafo 1</p>
+    <p id="p2" class="c1">Parágrafo 2</p>
+    <p id="p3" class="c2">Parágrafo 3</p>
+    <span style="color: sienna;">Texto 4</span>
+    <hr>
+
+    <p class="c3">Parágrafo 4</p>
+    <p class="c3">Parágrafo 5</p>
+    <p class="c3">Parágrafo 6</p>
+    <hr>
+
+    <h1>Display Block/Inline</h1>
+    <h3>Com 'div', 'p' e 'span'</h3>
+    <div class="bloco">Bloco</div>
+    <p id="p4">Parágrafo</p>
+    <span class="c4">Texto 1</span>
+    <span class="c4">Texto 2</span>
+    <!-- O 'span' É UM DISPLAY INLINE -->
+    <hr>
+
+    <h1>Width e Height</h1>
+    <h3>Com 'div' e 'span'</h3>
+    <div class="b2">
+        Blocos
+        <div class="b21">
+            BLOCO 1
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quidem ea praesentium unde perspiciatis minus ab in culpa excepturi consectetur? Qui doloremque cum optio commodi et nesciunt illo vero laborum.
+        </div>
+        <div class="b22">
+            BLOCO 2
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum tempora voluptatum perspiciatis! Et natus dolores ullam laboriosam quas, quis inventore beatae odio, eaque dolor non necessitatibus. Officiis, numquam sapiente? Modi.
+        </div>
+    </div>
+    <span class="c5">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto</span>
+    <hr>
+
+    <h1>Preenchimento de Fundo (cores)</h1>
+    <h3>Com 'div'</h3>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box2a">
+            <div class="box2aa"></div>
+        </div>
+    </div>
+    <button class="click">Clique Aqui</button>
+    <hr>
+
+    <h1>Preenchimento de Fundo (imagens)</h1>
+    <div class="box3">
+        <div class="box3a"></div>
+        <h3 style="color: white;">Com imagem normal e usando 'no-repeat'</h3>
+    </div>
+    <br>
+    <div class="box4">
+        <div class="box4a"></div>
+        <h3 style="color: white;">Com imagem de textura padrão (que dá para repetir)</h3>
+    </div>
+    <br>
+    <div class="box5">
+        <div class="box5a"></div>
+        <h3 style="color: white;">Com imagem por cima de outra imagem usando duas 'url' em 'background-image'</h3>
+    </div>
+    <hr>
+
+    <h1>Bordas e Linha de Destaque</h1>
+    <h3>Com 'border'</h3>
+    <div class="box6"></div>
+    <h3>Com 'outline'</h3>
+    <div class="box6a"></div>
+    <br>
+    <hr>
+
+    <h1>Cantos Arredondados</h1>
+    <h3>Com 'border-radius'</h3>
+    <div class="box7"></div>
+    <hr>
+
+    <h1>Opacidade e Visibilidade</h1>
+    <h3>Com 'visibility' e 'opacity'</h3>
+    <div class="box8">
+         Texto 1 - com 'visibility'
+    </div>
+    <div class="box8a">
+        Texto 2 - com 'opacity'
+    </div>
+    <hr>
+
+    <h1>Box Model - Espaçamento Externo</h1>
+    <h3>Com 'margin'</h3>
+    <div class="box9">
+        Texto 1
+    </div>
+    <div class="box9a">
+        Texto 2
+    </div>
+    <hr>
+
+    <h1>Box Model - Espaçamento Interno</h1>
+    <h3>Com 'padding'</h3>
+    <div class="box10">
+        Texto 1
+    </div>
+    <div class="box10a">
+        Texto 2
+    </div>
+    <hr>
+
+    <h1>Box Sizing</h1>
+    <h3>Com 'border-box' e 'content-box'</h3>
+    <div class="box11">
+        Texto 1
+    </div>
+    <div class="box11a">
+        Texto 2
+    </div>
+    <hr>
+
+    <h1>Contenção de Conteúdo</h1>
+    <h3>Com 'overflow'</h3>
+    <div class="box12">
+        <p>'overflow: auto;'</p>
+        <p>Texto 2</p>
+        <p>Texto 3</p>
+        <p>Texto 4</p>
+        <p>Texto 5</p>
+        <p>Texto 6</p>
+        <p>Texto 7</p>
+        <p>Texto 8</p>
+        <p>Texto 9</p>
+        <p>Texto 10</p>
+    </div>
+    <div class="box12a">
+        <p>'overflow: hidden;'</p>
+        <p>Texto 2</p>
+        <p>Texto 3</p>
+        <p>Texto 4</p>
+        <p>Texto 5</p>
+        <p>Texto 6</p>
+        <p>Texto 7</p>
+        <p>Texto 8</p>
+        <p>Texto 9</p>
+        <p>Texto 10</p>
+    </div>
+    <div class="box12aa">
+        <p>'overflow-y: scroll;'</p>
+        <p>'overflow-x: hidden;'</p>
+        <p>Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3</p>
+        <p>Texto 4 Texto 4 Texto 4 Texto 4 Texto 4 Texto 4 Texto 4 Texto 4</p>
+        <p>Texto 5</p>
+        <p>Texto 6</p>
+        <p>Texto 7</p>
+        <p>Texto 8</p>
+        <p>Texto 9</p>
+        <p>Texto 10</p>
+    </div>
+    <hr>
+
+    <h1>Tipos de fonte</h1>
+    <h3>Com 'font-family'</h3>
+    <div class="box13">
+        <p class="t1">TIMES NEW ROMAN: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatum eaque. Iste, laborum sed! Nam consequuntur, ipsum architecto, minima repudiandae ex excepturi in nesciunt aperiam, fugit ullam placeat quae eum!</p>
+        <p class="t2">ARIAL: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure? Earum, magni dolore quisquam, asperiores minus, enim ipsam expedita eveniet cumque saepe officiis? Possimus doloremque magni maiores, maxime mollitia quidem.</p>
+        <p class="t3">FONTE EXTERNA (BUNGEE SPICE): Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia modi dolorum itaque iure a odio aliquid magnam et at, ipsa rem dolore voluptatibus porro. Aliquam itaque dolor ducimus quas!</p>
+    </div>
+    <hr>
+
+    <h1>Tamanho do Texto</h1>
+    <h3>Com 'font-size'</h3>
+    <div class="box14">Texto 1</div>
+    <div class="box14a">Texto 2</div>
+    <hr>
+
+    <h1>Espessura (Peso)</h1>
+    <h3>Com 'font-weight'</h3>
+    <div class="box15">
+        <p class="p1">'font-weight: 100;'</p>
+        <p class="p2">'font-weight: 200;'</p>
+        <p class="p3">'font-weight: 300;'</p>
+        <p class="p4">'font-weight: 400;' (fonte padrão)</p>
+        <p class="p5">'font-weight: 500;'</p>
+        <p class="p6">'font-weight: 600;'</p>
+        <p class="p7">'font-weight: 700;'</p>
+        <p class="p8">'font-weight: 800;'</p>
+        <p class="p9">'font-weight: 900;'</p>
+    </div>
+    <hr>
+
+    <h1>Alinhamento de Texto</h1>
+    <h3>Com 'text-align'</h3>
+    <div class="box16">
+        <p><strong style="font-size: 18px;">'text-align: start;' (alinhamento padrão):</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis officiis ullam laboriosam nobis, tempora obcaecati recusandae enim quia perferendis voluptatibus esse eaque amet consequuntur non vitae architecto suscipit quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora expedita debitis quibusdam repellat aliquam, vitae libero quasi tenetur dolor consectetur, quo dolores reiciendis eos amet quidem laudantium! Doloribus, aut!</p>
+    </div>
+    <div class="box16a">
+        <p><strong style="font-size: 18px;">'text-align: center;':</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio nulla consequuntur illum iste accusantium ad mollitia aperiam quis eaque? Nam quo reiciendis earum, quod illo quibusdam adipisci quam impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste iusto excepturi expedita, corrupti aut labore omnis doloremque quo autem dicta aliquid voluptatum praesentium porro nostrum odio nobis? Eius, natus?</p>
+    </div>
+    <div class="box16aa">
+        <p><strong style="font-size: 18px;">'text-align: end;':</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio nulla consequuntur illum iste accusantium ad mollitia aperiam quis eaque? Nam quo reiciendis earum, quod illo quibusdam adipisci quam impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officiis, rem quam vero repellendus voluptate dolore nulla porro explicabo magnam tenetur maiores laborum at, numquam tempore perferendis ea, beatae inventore.</p>
+    </div>
+    <div class="box16ab">
+        <p><strong style="font-size: 18px;">'text-align: justify;':</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio nulla consequuntur illum iste accusantium ad mollitia aperiam quis eaque? Nam quo reiciendis earum, quod illo quibusdam adipisci quam impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non harum eum ea eos atque rerum, eveniet perferendis minus corrupti voluptate inventore officiis modi et, voluptatum blanditiis ratione, aliquid sapiente deleniti!</p>
+    </div>
+    <hr>
+
+    <h1>Decoração de texto</h1>
+    <h3>Com 'text-decoration'</h3>
+    <div class="box17">'text-decoration: underline dashed;'</div>
+    <div class="box17a">'text-decoration: overline double yellow;'</div>
+    <div class="box17aa">'text-decoration: underline overline wavy red;'</div>
+    <hr>
+
+    <h1>Capitalização</h1>
+    <h3>Com 'text-transform'</h3>
+    <div class="box18"><strong>'text-transform: none;':</strong> Texto Normal</div>    
+    <div class="box18a"><strong>'text-transform: capitalize;':</strong> texto capitalizado</div>
+    <div class="box18aa"><strong>'text-transform: uppercase;':</strong> texto em caixa alta</div>
+    <div class="box18ab"><strong>'text-transform: lowercase;':</strong> Texto Em Caixa Baixa</div>
+    <hr>
+
+    <h1>Espaçamento</h1>
+    <h3>Com 'line-height' e 'letter-spacing'</h3>
+    <div class="box19">
+        <strong style="font-size: 18px;">'line-height: 1.5;':</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore inventore, possimus quaerat magnam optio repellat excepturi, aspernatur aut enim veritatis facilis obcaecati aliquam blanditiis officiis et cumque esse ex in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste harum ex temporibus sunt magnam deserunt illum. Cupiditate hic ratione veniam dicta. Harum provident incidunt modi dolorum possimus animi ab voluptas.
+    </div>
+    <div class="box19a">
+        <strong style="font-size: 18px;">'line-height: 30px;':</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur voluptate delectus tempora cumque omnis, deserunt dolorum itaque voluptatibus accusantium alias corporis rerum eveniet unde rem! Amet voluptas optio fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam nemo dolores! Maiores distinctio saepe, commodi earum eius ipsam nemo officiis repellat numquam, rerum, voluptatem ipsum aperiam eligendi quibusdam maxime.
+    </div>
+    <div class="box19aa">
+        <strong style="font-size: 18px;">'letter-spacing: 4px;':</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur voluptate delectus tempora cumque omnis, deserunt dolorum itaque voluptatibus accusantium alias corporis rerum eveniet unde rem! Amet voluptas optio fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam nemo dolores! Maiores distinctio saepe, commodi earum eius ipsam nemo officiis repellat numquam, rerum, voluptatem ipsum aperiam eligendi quibusdam maxime.
+    </div>
+    <hr>
+
+    <h1>Deslocamento</h1>
+    <h3>Com 'float'</h3>
+    <div class="box20 box20a">Bloco 1</div>
+    <div class="box20 box20aa">Bloco 2</div>
+    <div class="box20 box20ab">Bloco 3</div>
+    <div class="box20 box20ac">Boco 4</div>    
+    <hr>
+
+    <h1>Posicionamento e Profundidade</h1>
+    <h3>Com 'position', '(top, right, bottom e left)' e 'z-index'</h3>
+    <a style="margin: 20px; padding: 20px; color: white;" href="posicionamento.html">CLIQUE AQUI</a>
+    <hr>
+
+    <h1>Estilizando Listas</h1>
+    <h3>Com 'list-style-position', 'list-style-type' e 'list-style-image'</h3>
+    <div class="box23">
+        <ul class="lista">
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+            <li class="item">Item 4</li>
+            <li class="item">Item 5</li>
+        </ul>
+        <ul class="lista2">
+            <li class="item2">Item 6</li>
+            <li class="item2">Item 7</li>
+            <li class="item2">Item 8</li>
+            <li class="item2">Item 9</li>
+            <li class="item2">Item 10</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h1>Estilizando Inputs</h1>
+    <div class="box24">
+        <div class="box24a">
+            <label>Nome</label>
+            <input type="text" placeholder="Digite o seu nome">
+        </div>
+        <div class="box24a">
+            <label>Mensagem</label>
+            <textarea>Digite a sua mensagem</textarea>
+        </div>
+        <div class="box24a">
+            <label>Opções</label>
+            <select>
+                <option>Opção 1</option>
+                <option>Opção 2</option>
+                <option>Opção 3</option>
+            </select>
+        </div>
+        <div class="box24aa">
+            <button type="submit">Botão</button>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Redimensionamento de Divs</h1>
+    <div class="box25">
+        <textarea>Digite a sua mensagem</textarea>
+        <div class="box25a">
+            <strong>
+                resize: both; <br>
+                overflow: auto;
+            </strong>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Estilizando Tabelas</h1>
+    <div class="box26">
+        <table width="100%" border="1" cellspacing="0" cellpadding="15">
+            <caption>Carros</caption>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fiat</td>
+                    <td>Uno</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>Ford</td>
+                    <td>Fiesta</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>BMW</td>
+                    <td>X1</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Caoa Cherry</td>
+                    <td>Tiggo 8</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <br>
+    <div class="box26a">
+        <table class="box26a-tb">
+            <caption>Carros</caption>
+            <thead>
+                <tr>
+                    <th class="first-th">Marca</th>
+                    <th>Modelo</th>
+                    <th class="last-th">Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fiat</td>
+                    <td>Uno</td>
+                    <td>1997</td>
+                </tr>
+                <tr class="even">
+                    <td>Ford</td>
+                    <td>Fiesta</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>BMW</td>
+                    <td>X1</td>
+                    <td>2022</td>
+                </tr>
+                <tr class="even">
+                    <td>Caoa Cherry</td>
+                    <td>Tiggo 8</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="total">Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr>
+
+    <h1>Estilizando Barras de Rolagem</h1>
+    <div class="box27">
+        <div class="box27a">
+            <p>Texto 1</p>
+            <p>Texto 2</p>
+            <p>Texto 3</p>
+            <p>Texto 4</p>
+            <p>Texto 5</p>
+            <p>Texto 6</p>
+            <p>Texto 7</p>
+            <p>Texto 8</p>
+            <p>Texto 9</p>
+            <p>Texto 10</p>
+            <p>Texto 11</p>
+            <p>Texto 12</p>
+        </div>
+        <div class="box27aa">
+            <p>Texto 13</p>
+            <p>Texto 14</p>
+            <p>Texto 15</p>
+            <p>Texto 16</p>
+            <p>Texto 17</p>
+            <p>Texto 18</p>
+            <p>Texto 19</p>
+            <p>Texto 20</p>
+            <p>Texto 21</p>
+            <p>Texto 22</p>
+            <p>Texto 23</p>
+            <p>Texto 24</p>
+        </div>
+    </div>
+</body>
+</html>
