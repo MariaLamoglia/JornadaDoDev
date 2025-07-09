@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Posicionamento</title>
+</head>
+<body>
+    <h1>Configurações de Posicionamento</h1>
+    <hr>
+    <div class="container my-3 vstack gap-3">
+        <!-- 'VSTACK' = O CONTEÚDO SE TORNA UMA PILHA VERTICAL -->
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <h2>Na div 3: 'vr' e 'ms-auto'.</h2>
+    <div class="container my-3 hstack gap-3">
+        <!-- 'HSTACK' = O CONTEÚDO SE TORNA UMA PILHA HORIZONTAL -->
+        <div class="p-5 bg-primary"></div>
+        <div class="vr ms-auto"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <h2>Na div 3: 'position-absolute' e 'end-0'. </h2>
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success position-absolute end-0"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+</body>
+</html>

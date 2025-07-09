@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Formatação de Textos</h1>
+    <hr>
+    <h2>Com 'text-center' e 'fs-3'</h2>
+    <div class="container">
+        <p class="text-center fs-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, porro, ut laboriosam velit nemo facilis possimus assumenda, sint non voluptatem laudantium placeat magni repellendus optio. Ad recusandae blanditiis voluptates non?
+        </p>
+    </div>
+    <hr>
+    <div class="container fs-3">
+        <p class="fw-bold">Texto com peso negrito ('fw-bold')</p>
+        <p class="fw-semibold">Texto com peso semi-negrito ('fw-semibold')</p>
+        <p class="fw-normal">Texto com peso normal ('fw-normal' / padrão)</p>
+        <p class="fw-light">Texto com peso leve ('fw-light')</p>
+        <p class="fst-italic">Texto com estilo itálico ('fst-italic')</p>
+        <p class="fst-normal">Texto com estilo normal ('fst-normal' / padrão)</p>
+    </div>
+    <hr>
+    <div class="container fs-3">
+        <p class="lh-1">
+            <strong>Com 'lh-1':</strong>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias provident dolor distinctio voluptas fugiat exercitationem est, deleniti modi eaque quisquam odio corporis repellat qui voluptatibus ut. Quibusdam, debitis ex?
+        </p>
+        <p class="lh-sm">
+            <strong>Com 'lh-sm':</strong>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias provident dolor distinctio voluptas fugiat exercitationem est, deleniti modi eaque quisquam odio corporis repellat qui voluptatibus ut. Quibusdam, debitis ex?
+        </p>
+        <p class="lh-lg">
+            <strong>Com 'lh-lg':</strong>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias provident dolor distinctio voluptas fugiat exercitationem est, deleniti modi eaque quisquam odio corporis repellat qui voluptatibus ut. Quibusdam, debitis ex?
+        </p>
+        <p class="font-monospace text-muted">
+            <strong>Com 'font-monospace' e 'text-muted':</strong>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias provident dolor distinctio voluptas fugiat exercitationem est, deleniti modi eaque quisquam odio corporis repellat qui voluptatibus ut. Quibusdam, debitis ex?
+            <a href="#" class="text-reset">Link Qualquer ('text-reset')</a>
+            <!-- 'TEXT-RESET' = ASSUME A COR DE FONTE DO ELEMENTO-PAI -->
+        </p>
+    </div>
+    <hr>
+    <div class="container fs-3">
+        <p class="text-truncate">
+            <!-- 'TEXT-TRUNCATE' = MOSTRA SÓ UMA PARTE DO TEXTO -->
+            <strong>Com 'text-truncate':</strong>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quia laudantium. Cum quasi exercitationem incidunt beatae accusantium eius consectetur qui non? Esse consequuntur eligendi corrupti error nobis ratione fugiat consequatur.
+        </p>
+    </div>
+</body>
+</html>

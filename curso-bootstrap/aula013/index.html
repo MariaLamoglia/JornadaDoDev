@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Margens e Paddings</title>
+</head>
+<body>
+    <h1>Margens Externas e Internas</h1>
+    <hr>
+    <!-- MARGIN    
+        'M' = MARGIN TODOS OS LADOS
+        'MS' (MARGIN-START) = MARGIN-LEFT
+        'ME' (MARGIN-END) = MARGIN-RIGHT
+        'MT' = (MARGIN-TOP) 
+        'MB' = (MARGIN-BOTTOM)
+        'MX' (MARGIN HORIZONTAL) = LEFT(MS) / RIGHT(ME)
+        'MY' (MARGIN VERTICAL) = TOP(MT) / BOTTOM(MB)
+
+        PADDING
+        'P' = PADDING TODOS OS LADOS
+        'PS' (PADDING-START) = PADDING-LEFT
+        'PE' (PADDING-END) = PADDING-RIGHT
+        'PT' = (PADDING-TOP) 
+        'PB' = (PADDING-BOTTOM)
+        'PX' (PADDING HORIZONTAL) = LEFT(PS) / RIGHT(PE)
+        'PY' (PADDING VERTICAL) = TOP(PT) / BOTTOM(PB)
+    -->
+    <h2>Com 'm-4' e 'p-4'</h2>
+    <div class="container">
+        <p class="text-bg-dark m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark m-4 p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+    </div>
+    <hr>
+    <h2>Com 'ms-3' e 'pt-3'</h2>
+    <div class="container">
+        <p class="text-bg-dark ms-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark m-3 pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+    </div>
+    <hr>
+    <h2>Com 'mx-4' e 'px-5'</h2>
+    <div class="container">
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark mx-4 px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+    </div>
+    <hr>
+    <h2>Com 'my-5' e 'py-4'</h2>
+    <div class="container">
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark my-5 py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odio architecto nihil quasi neque nesciunt minima praesentium nisi dolorum dolores!</p>
+    </div>
+    <hr>
+    <h2>Centralizando a segunda div</h2>
+    <h3>Com 'mx-auto'</h3>
+    <div class="container bg-secondary">
+        <div class="bg-primary col-4 p-5 mx-auto">
+
+        </div>
+    </div>
+    <hr>
+</body>
+</html>
