@@ -1,0 +1,124 @@
+====== OPERADORES LÓGICOS E DE COMPARAÇÃO ======
+
+-> and: 
+- É um operador lógico que retorna 'True' apenas se ambas as condições que ele conecta forem verdadeiras. Caso contrário, ele retorna 'False'
+
+-> in:
+- É um operador de pertencimento usado para verificar se um valor existe dentro de uma sequência, como uma lista ou string. Ele retorna 'True' se o valor for encontrado e 'False' caso contrário.
+
+-> is:
+- É um operador de identidade que verifica se duas variáveis apontam para o mesmo objeto na memória. Ele retorna 'True' se as variáveis forem o mesmo objeto, não apenas se tiverem o mesmo valor.
+
+-> not:
+- É um operador lógico de negação que inverte o valor booleano de uma expressão. o que é 'True' se torna 'False', e o que é 'False' se torna 'True'
+
+-> or:
+- É um operador lógico que retorna 'True' se pelo menos uma das condições que ele conecta for verdadeira. ele só retorna 'False' se ambas as condições forem falsas.
+
+====== VALORES E TIPOS DE DADOS ======
+
+-> False:
+- Representa o valor booleano falso em expressões condicionais. É o resultado de comparações que não são verdadeiras.
+
+-> None:
+- Representa a ausência de valor, semelhante a um valor nulo em outras linguagens. É frequentemente usado para indicar que uma variável ainda não foi atribuída a um valor concreto.
+
+-> True:
+- Representa o valor booleano verdadeiro em expressões condicionais. É o resultado de comparações que são verdadeiras.
+
+====== ESTRUTURAS DE CONTROLE (CONDICIONAIS E LOOPS) ======
+
+-> if:
+- Inicia um bloco de código condicional que é executado somente se uma determinada condição for verdadeira. É a principal ferramenta para criar desvios na lógica de um programa.
+
+-> elif:
+- Abreviação de 'else if', permite verificar múltiplas condições em sequência. É executado apenas se a condição 'if' anterior (ou 'elif') for falsa, mas a sua própria condição for verdadeira.
+
+-> else:
+- Define um bloco de código que é executado se nenhuma das condições 'if' ou 'elif' anteriores for atendida. Também é usado em loops para executar um código quando o loop termina sem nenhuma interrupção por 'break'.
+
+-> for:
+- Cria um laço de repetição (loop) que itera sobre os itens de qualquer sequência, como uma lista, tupla ou string. A cada iteração, uma variável assume o valor do item atual da sequência.
+
+- tupla = Coleção de itens que é ordenada e imutável (seus elementos não podem ser alterados após a sua criação). Definida utilizando '()' e serve para agrupar dados relacionados que não devem ser modificados, garantindo a integridade desses dados.
+
+-> while:
+- Cria um laço de repetição que executa um bloco de código continuamente enquanto uma condição especificada permanecer verdadeira. A condição é verificada antes de cada iteração.
+
+-> break:
+- Interrompe imediatamente a execução do laço de repetição (for ou while) mais interno. O controle do programa passa para a primeira instrução após o corpo do laço.
+
+-> continue:
+- Pula para a próxima iteração do laço de repetição (for ou while) mais interno. O restante do código dentro do laço na iteração atual é ignorado.
+
+-> pass:
+- É uma operação nula que não faz nada. É usada como um marcador de posição onde o código é sintaticamente necessário, mas nenhuma ação é desejada, como em uma função ou classe vazia.
+
+====== FUNÇÕES E CLASSES ======
+
+-> class:
+- É usada para definir uma nova classe, que serve como um modelo para criar objetos. Classes encapsulam dados (atributos) e funções (métodos) em uma única estrutura.
+
+-> def:
+- É usada para definir uma nova função ou método. Ela é seguida pelo nome da função, seus parâmetros entre parênteses e o bloco de código que a função executa.
+
+-> lambda:
+- Cria uma função anônima, pequena e de uma única expressão. É útil para criar funções simples que são passadas como argumentos para outras funções de ordem superior.
+
+-> return:
+- Finaliza a execução de uma função e opcionalmente retorna um valor para o ponto do programa onde a função foi chamada. Se nenhum valor for especificado, a função retorna 'None'.
+
+-> yield:
+- É usada em uma função para transformá-la em um gerador (generator), que pode produzir uma sequência de valores ao longo do tempo. A função pausa sua execução a cada 'yield' e a retoma na próxima chamada.
+
+====== TRATAMENTO DE EXCEÇÕES ======
+
+-> assert:
+- É usada para fins de depuração, testando se uma condição é verdadeira. Se a condição for falsa, ela lança um erro (AssertionError), ajudando a identificar problemas no código.
+
+-> except:
+- Inicia um bloco de código que trata um erro específico que pode ter ocorrido dentro de um bloco 'try'. Ele captura a exceção, permitindo que o programa se recupere do erro ou execute uma ação alternativa.
+
+-> finally:
+- Define um bloco de código que será executado sempre, independentemente de ter ocorrido uma exceção ou não. É ideal para tarefas de "limpezas", como fechar arquivos ou conexão de rede.
+
+-> raise:
+- É usada para lançar uma exceção (erro) manualmente. Permite que você sinalize que uma condição de erro ocorreu em seu código.
+
+-> try:
+- Inicia um bloco de código que pode potencialmente gerar uma exceção. Ele permite que você "tente" executar um código e capture erros que possam ocorrer.
+
+====== MÓDULOS E ESCOPO ======
+
+-> as:
+- É usada para criar um apelido (alias) para um módulo ou objeto importado, tornando seu nome mais curto ou evitando conflitos de nome. Também é usada com as declarações 'with' e 'except'.
+
+-> from:
+- É usada em conjunto com 'import' para importar partes específicas de um módulo, como uma função ou classe. Isso permite o uso direto do item importado sem precisar prefixá-los com o nome do módulo.
+
+-> global:
+- Declara que uma variável dentro de uma função se refere a uma variável no escopo global. Permite modificar uma variável global de dentro de uma função.
+
+-> import:
+- É usada para carregar e utilizar o código de outro módulo Python em seu script atual. Torna as funções, classes e variáveis do módulo importado acessíveis.
+
+-> nonlocal:
+- Declara que uma variável se refere a uma variável em um escopo superior que não é o global (por exemplo, em uma função aninhada). Permite modificar variáveis de uma função externa de dentro de uma função interna.
+
+-> with:
+- Simplifica o gerenciamento de recursos, como arquivos ou conexões, garantindo que eles sejam configurados e finalizados corretamente. Executa automaticamente métodos de limpeza, mesmo que ocorram erros.
+
+====== PROGRAMAÇÃO ASSÍNCRONA ======
+
+-> async:
+- É usada para declarar uma função como uma corrotina, que é a base da programação assíncrona. Tai funções podem ser pausadas e retomadas para permitir a execução de outras tarefas.
+
+- corrotina = Tipo especial de função, declarada com 'async def', que pode pausar sua execução antes de terminar e retomá-la mais tarde a partir do mesmo ponto. Esse mecanismo é a base da programação assíncrona, pois permite que um programa execute outras tarefas enquanto espera por uma operação demorada, sem travar o sistema.
+
+-> await:
+- Pausa a execução de uma corrotina (async def) até que uma operação assíncrona seja concluída. Só pode ser usada dentro de uma função 'async def'.
+
+====== GERENCIAMENTO DE MEMÓRIA ======
+
+-> del: 
+- É usada para remover um objeto, como uma variável, um item de uma lista ou uma propriedade de um dicionário. A remoção de todas as referências a um objeto permite que o coletor de lixo do Python libere a memória.

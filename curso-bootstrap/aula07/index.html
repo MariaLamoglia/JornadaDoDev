@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Formatação de Colunas</title>
+    <style>
+        .row{
+            height: 200px;
+            background-color: aliceblue;
+        }
+
+        .col-3{
+            background-color: antiquewhite;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Colunas de Layout</h1>
+    <hr>
+    <h2>Com 'align' (vertical)</h2>
+    <h3>'align-self-start/center/end'</h3>
+    <div class="container">
+        <div class="row">
+            <div class="div col-3 align-self-start">Coluna 1</div>
+            <div class="div col-3 align-self-center">Coluna 2</div>
+            <div class="div col-3 align-self-end">Coluna 3</div>
+        </div>
+    </div>
+    <hr>
+    <h2>Com 'justify' (horizontal)</h2>
+    <!-- O 'justify-content-start' É O PADRÃO -->
+    <h3> 'justify-content-center'</h3>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <h3> 'justify-content-end'</h3>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <h3> 'justify-content-between'</h3>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <h3> 'justify-content-around'</h3>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <h3> 'justify-content-evenly'</h3>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <h3>Forçando uma quebra de linha em que C1 fique na parte superior e C2/C3 fiquem na inferior</h3>
+    <h4>Com 'w-100'</h4>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="div col-3">Coluna 1</div>
+            <div class="w-100"></div>
+            <div class="div col-3">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <hr>
+    <h2>Deslocamento de Colunas</h2>
+    <h3>Com 'offset-n'</h3> <!-- 'n' = NÚMERO DE COLUNAS QUE QUEIRA DESLOCAR-->
+    <div class="container">
+        <div class="row">
+            <div class="div col-3 offset-1">Coluna 1</div>
+            <div class="div col-3 offset-2">Coluna 2</div>
+            <div class="div col-3">Coluna 3</div>
+        </div>
+    </div>
+    <hr>
+     <h2>Margem Automática (a esquerda)</h2>
+    <h3>Com 'ms-auto'</h3>
+    <div class="container">
+        <div class="row">
+            <div class="div col-3 ms-auto">Coluna 1</div>
+            <div class="div col-3 ms-auto">Coluna 2</div>
+        </div>
+    </div>
+    <hr>
+     <h2>Margem Horizontal</h2>
+    <h3>Com 'mx-auto'</h3>
+    <!-- O 'x' = VEM DO EIXO X / EIXO HORIZONTAL -->
+    <div class="container">
+        <div class="row">
+            <div class="div col-3 mx-auto">Coluna 1</div>
+        </div>
+    </div>
+    <hr>
+     <h2>Colunas Soltas (fora do 'row')</h2>
+    <div class="container">
+            <div class="div col-3">Coluna 1</div>
+            <div class="div col-3">Coluna 2</div>
+    </div>
+</body>
+</html>
